@@ -1,0 +1,10 @@
+# Test if a graph can be loaded with multiple file
+
+# Load multiple files to the same graph
+LoadGraph graph marvel.tsv
+LoadGraph graph staffSuperheroes.tsv
+LoadGraph graph marvel.tsv
+LoadGraph graph staffSuperheroes.tsv
+
+# list children of one node
+ListChildren graph Ernst-the-Bicycling-Wizard

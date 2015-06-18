@@ -1,0 +1,29 @@
+Graph g is a map with String(parentNames) as keys, Edges as values. To support Graph class, 
+I also created one other class, Edges. I did not put this class as an inner class in class Graph, because 
+I think in the future, Edges may have their uses independently, but also in
+the next project, it may contain more information, putting it in Graph would make Graph too messy.
+
+Graph does not contain duplicate nodes.
+Between the same parentNode and childNode, there are no duplicate labels
+
+g has one creator, Graph() is to create g with an empty map.
+g has multiple observers, getNodes is to return all nodes on map; getChildren is to return all the child nodes
+of a parent node; getLabels is to return all the labels given childName and parentName; 
+containsNode is to see if g has a specific node; contains edges is to see if there
+is an edge between two nodes;
+getEdges is a private helper method which helps Graph efficiently uses Edges. 
+
+g needs multiple of mutators to edit itself, such as addNode,
+addEdge, deleteNode, deleteEdge, deleteAllEdges(of one specific node), clear(clear the whole map),
+I decide to make Graph mutable because when clients implementing Graph, its size could get really large.
+Returning a new graph when every time g is edited would take too much space. 
+
+Edges e is a map with String(childName) as key, String(labels) as values.
+e has one creator, Edges() is to create e with an empty map.
+there are observers: getChildren, return all child nodes on edges; getLabel, return all labels give a child node;
+containChildren, to see if a child node is there; containLabel, to see if a label is there given a child node
+
+there are mutators such as addEdge, removeEdge, and removeChild to edit the map. As the size of Edges 
+get much larger, Mutability of Edges would significantly reduce the cost when making change to it
+
+

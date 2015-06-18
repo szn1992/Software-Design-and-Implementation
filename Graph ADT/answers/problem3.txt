@@ -1,0 +1,19 @@
+ImplementationTest covers possibly every condition of methods and contructors in Edges and Graph.
+When editing the Graph or Edges, my tests covers the condition when different nodes, edges are added
+or removed, or duplicate nodes or edges are added or removed. My tests also test if exceptions are thrown
+in the extreme cases such as nodes or edges do not exist or they are null.
+Observers are also tested with the similar strategy, as well as the extreme cases such as when any of parameters
+is null, or it does not exist.
+
+SpecificationTest includes
+exampleTestVariousCase1 (given)
+testCreateGraph: test adding multiple graphs
+testAddNode: test adding multiple different nodes
+testAddDuplicateNodes: test adding duplicate nodes
+testAddEdge: test adding multiple different edges
+testAddEdgeDuplicate: test adding duplicate edges
+
+testCreateGraph, testAddNode, testAddEdge test the general cases such as simply adding different nodes and edges. 
+Aside from these, I made those test for duplicate cases, because Graph restrict duplicates on nodes and labels of edges.
+
+No new test is needed, since my test basically covers all cases.

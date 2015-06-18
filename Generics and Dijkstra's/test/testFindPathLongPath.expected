@@ -1,0 +1,32 @@
+#Test the output of findPath in a complicated graph
+
+# Load the graph
+loaded graph marvel
+
+# Find the path
+path from WARLORD to WU, LEIKO:
+WARLORD to KILLRAVEN/JONATHAN R with weight 0.333
+KILLRAVEN/JONATHAN R to HAWK with weight 0.071
+HAWK to CAPTAIN AMERICA with weight 0.003
+CAPTAIN AMERICA to BLACK WIDOW/NATASHA  with weight 0.007
+BLACK WIDOW/NATASHA  to SHANG-CHI with weight 0.067
+SHANG-CHI to WU, LEIKO with weight 0.011
+total cost: 0.493
+
+path from LUPO to ROM CLONE:
+LUPO to KA-ZAR/KEVIN PLUNDER with weight 0.143
+KA-ZAR/KEVIN PLUNDER to SPIDER-MAN/PETER PAR with weight 0.053
+SPIDER-MAN/PETER PAR to HULK/DR. ROBERT BRUC with weight 0.011
+HULK/DR. ROBERT BRUC to JONES, RICHARD MILHO with weight 0.006
+JONES, RICHARD MILHO to ROM, SPACEKNIGHT with weight 0.071
+ROM, SPACEKNIGHT to ROM CLONE with weight 0.250
+total cost: 0.533
+
+path from OSAMA to ROM CLONE:
+OSAMA to KNIGHT, MISTY with weight 0.250
+KNIGHT, MISTY to CAGE, LUKE/CARL LUCA with weight 0.017
+CAGE, LUKE/CARL LUCA to HULK/DR. ROBERT BRUC with weight 0.032
+HULK/DR. ROBERT BRUC to JONES, RICHARD MILHO with weight 0.006
+JONES, RICHARD MILHO to ROM, SPACEKNIGHT with weight 0.071
+ROM, SPACEKNIGHT to ROM CLONE with weight 0.250
+total cost: 0.626

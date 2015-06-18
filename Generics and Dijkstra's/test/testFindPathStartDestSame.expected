@@ -1,0 +1,11 @@
+# Test the output of findPath if start and dest are the same
+
+# Load the graph
+loaded graph marvel
+
+# Find the path where start and dest are same
+path from WISDOM, PETER to WISDOM, PETER:
+total cost: 0.000
+
+path from HAWK to HAWK:
+total cost: 0.000

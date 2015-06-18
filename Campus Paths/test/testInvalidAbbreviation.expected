@@ -1,0 +1,14 @@
+Menu:
+	r to find a route
+	b to see a list of all buildings
+	q to quit
+
+Enter an option ('m' to see the menu): # Test the output when invalid abbreviated names are entered
+# when getting the shortest path
+
+Abbreviated name of starting building: Abbreviated name of ending building: Unknown building: OOG
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Unknown building: WHAT
+Unknown building: AH
+
+Enter an option ('m' to see the menu): 

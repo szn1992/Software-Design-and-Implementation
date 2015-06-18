@@ -1,0 +1,6 @@
+# Test getting shortest path when abbreviated names of start
+# and dest are the same
+r
+CSE
+CSE
+q

@@ -1,0 +1,19 @@
+Menu:
+	r to find a route
+	b to see a list of all buildings
+	q to quit
+
+Enter an option ('m' to see the menu): # Test the outputs when unknown commands are typed
+Unknown option
+
+Enter an option ('m' to see the menu): Unknown option
+
+Enter an option ('m' to see the menu): Unknown option
+
+Enter an option ('m' to see the menu): Unknown option
+
+Enter an option ('m' to see the menu): Unknown option
+
+Enter an option ('m' to see the menu): Unknown option
+
+Enter an option ('m' to see the menu): 

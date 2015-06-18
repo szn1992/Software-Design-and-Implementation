@@ -1,0 +1,9 @@
+# Test the output of findPath if start and dest are the same
+
+# Load the graph
+LoadGraph marvel marvel.tsv
+
+# Find the path where start and dest are same
+FindPath marvel WISDOM,_PETER WISDOM,_PETER
+
+FindPath marvel HAWK HAWK

@@ -1,0 +1,51 @@
+a.
+	1.	IntQueue1:
+		Abstraction Function: 
+		An IntQueue, q, is entries, first-in, first-out.
+		entries.get(0) is the front of q, where element goes out
+		entries.get(length - 1) is the back of q, where element comes in
+		
+		Representation Invariant:
+		entries != null && entries is sorted in the order of the time when
+		each element is added, such that latest is at the front, and earliest 
+		is at the back.
+		
+	2.  IntQueue2:
+		Abstraction Function:
+		Representation Invariant: 
+		An InQueue, q, is entries, first-in, first-out
+		entries[front] is the front of q, where element goes out
+		entries[(front+size)%entries.length] is the back of q, where element comes in
+		
+		Representation Invariant:
+		front >= 0 && front < entries.length
+		size >= 0 && size < entries.length
+		entries != null && entries is sorted in the order of the time when
+		each element is added, such that latest is at the front, and earliest 
+		is at the back.
+b.
+	a, d, and g are equivalent: front[1, 2]back, size = 2
+	b and h are equivalent: front[2, 3, 4]back, size = 3
+	c and f are equibalent: front[1, 2, 3]back, size = 3
+	e: front[1, 2, 3, 4], size = 4
+c.
+	int solveEquations(int x, int y, int z)
+	There is no risk of rep exposure because there is no reference being returned, only ints.
+
+    String[] decode(boolean slowly)
+	It could expose the representation. The client can modify the array that is returned.
+
+    Date myBirthday()
+	There is no chance of rep exposure because the method is private.
+
+    String toString()
+	There is no risk of rep exposure because String in java is immutable
+
+    Iterator<Integer> elements()
+	There is no risk because the collection cannot be modified by an iterator, 
+	and Integer inside Iterator is immutable.
+
+    Deck(List<Card> cards)
+	There is a risk of rep exposure if cards are only reference, or cards are mutable.
+	
+	

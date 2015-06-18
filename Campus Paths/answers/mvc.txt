@@ -1,0 +1,11 @@
+Zhuonan Sun, hw8
+
+ALL CLASSES: CampusMain, CampusPaths, CampusParser, Building, Path, PathComparator
+
+Model: CampusPaths
+	methods for model: getDistance, sortBuildingNames, findBuilding, getDirection
+						getShortestPath,
+View and Controller: CampusMain
+	methods for view: menu, printBuilding, printPath
+	methods for controller: main, printPath
+	

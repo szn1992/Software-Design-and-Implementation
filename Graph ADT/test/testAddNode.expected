@@ -1,0 +1,19 @@
+# Tests that multiple nodes can be added
+
+# Create a graph
+created graph graph1
+
+# Add multiple nodes
+added node n1 to graph1
+added node n2 to graph1
+added node n3 to graph1
+added node n4 to graph1
+added node n5 to graph1
+added node n6 to graph1
+added node n7 to graph1
+added node n8 to graph1
+added node n9 to graph1
+added node n10 to graph1
+
+# Print nodes in graph1
+graph1 contains: n1 n10 n2 n3 n4 n5 n6 n7 n8 n9

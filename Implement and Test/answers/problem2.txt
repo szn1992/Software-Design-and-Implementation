@@ -1,0 +1,24 @@
+Problem2
+a.
+checkRep() is called at the end of constructor RatTerm. It is put there because when some method
+try to return a new RatTerm. The coefficient or exponent of the new RatTerm need to be checked to
+see if it violates the rep invariant
+
+b.
+Constructor RatTerm, methods checkRep and isZero need to delete codes that check if exponent is 0 while
+coefficient is 0, since these checks are no longer necessary;
+this would make most of the program less complex, but equals() and toString() which require expt to be 0 
+while coeff is 0, because less operations and weaker rep invariant checks make the execution more efficient.
+
+equals() and toString() would have to add code, so that two ZERO RatTerms can be compared, such as (0, 0) and (0, 7),
+and a string of ZERO RatTerm can be correctly returned((0, 7) should be returned as "0");
+this would makes these two methods more complex since they involve extra operations to make the RatTerm in a form of
+(0, 0), either for comparing or being returned as String, which makes execution less efficient.
+
+c.
+Constructor RatTerm and method checkRep need to add codes that check on if coefficient is NaN, then exponent must
+be 0; this makes the program more complex, since extra checks make the execution less efficient.
+
+Only coeff.equals(RatNum.ZERO) ==> expt = 0 is better, which makes the code clearer since (0, 0) is only representation
+of 0. coeff.isNaN() ==> expt = 0 is unnecessary, because it's never needed in other methods, but still requires extra
+checks in constructor and checkRep(), which make execution less efficient.

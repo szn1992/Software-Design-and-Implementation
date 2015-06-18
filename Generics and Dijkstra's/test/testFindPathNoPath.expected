@@ -1,0 +1,14 @@
+# Test the output of findPath if there is no path found
+
+# Load the graph
+loaded graph staff
+
+# Find the path of two nodes that have connections
+path from Perkins to Reges:
+no path found
+
+path from Perkins to Beame:
+no path found
+
+path from Beame to Helene:
+no path found

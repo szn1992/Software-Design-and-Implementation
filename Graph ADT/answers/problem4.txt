@@ -1,0 +1,8 @@
+My design is other than those three representations on the spec. Collections of edges is too simple and slow in
+many cases. Adjacency list is slow to find a specific edge when the list in a bucket is too long. Adjacency matrix
+could take too much space. 
+I decide to use HashMap<parentName, Edges> to represent a graph, so that quickly I could access all edges of one 
+node: O(1)
+Edges is also designed using a HashMap<childName, HashSet<label>>, so that I can immediately get all labels give
+a parent node and child node: O(1)
+This design is not only efficient, but also saves space.

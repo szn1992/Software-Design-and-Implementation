@@ -1,0 +1,14 @@
+# Test the correctness of FindPath if there is an unknown character
+
+# Load the graph
+loaded graph marvel
+
+# Find the path of an unknown node to a known node
+unknown character Eric Sun
+
+# Find the path of a known node to an unknown node
+unknown character Eric Sun
+
+# Find the path of an unknown node to an unknown node
+unknown character Batman
+unknown character Superman

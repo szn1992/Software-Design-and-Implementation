@@ -1,0 +1,6 @@
+Problem 5
+My favorite polynomial equations:
+1. 1/3*x^3+x^2+x
+2. x^2+2*x+1
+3. 25*x^33+x^20+10*x
+4. 25/34*x^34+1/21*x^21+5*x^2

@@ -1,0 +1,15 @@
+Zhuonan Sun CSE331 AC
+
+a. In the if statement, it says if n <= 0, an exception that n is negative will be thrown.
+However, n is not negative when n=0. This problem is fixed by changing the condition
+to "n < 0"
+
+b. Test fails because when n=0, an exception that n is negative will be thrown. However, 
+n is not negative in this case. This problem is fixed by changing the condition from "n<=0"
+to "n < 0"
+
+c. Test fails because the condition "n<=2" and operation "getFibTerm(n - 1) - getFibTerm(n - 2)"
+violate the rule in Fibonacci. When the term is 2, it should return the sum of term1 and term0, not "1"
+When the term is >= 2, it should return the sum of last two terms, n-1 and n-2, not the difference.
+This is problem can be fixed by changing "n<=2" to "n<2," and changing "getFibTerm(n - 1) - getFibTerm(n - 2)"
+to "getFibTerm(n - 1) + getFibTerm(n - 2)"

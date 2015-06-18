@@ -1,0 +1,11 @@
+Menu:
+	r to find a route
+	b to see a list of all buildings
+	q to quit
+
+Enter an option ('m' to see the menu): # Test getting shortest path when abbreviated names of start
+# and dest are the same
+Abbreviated name of starting building: Abbreviated name of ending building: Path from Paul G. Allen Center for Computer Science & Engineering to Paul G. Allen Center for Computer Science & Engineering:
+Total distance: 0 feet
+
+Enter an option ('m' to see the menu): 

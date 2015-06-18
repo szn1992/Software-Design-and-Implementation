@@ -1,0 +1,13 @@
+# Test adding duplicated nodes, there should not be
+# any duplicate nodes in graph after adding
+
+# Create a graph
+CreateGraph graph1
+
+# Add duplicate nodes
+AddNode graph1 n1
+AddNode graph1 n1
+AddNode graph1 n1
+
+# Print the nodes in the graph
+ListNodes graph1

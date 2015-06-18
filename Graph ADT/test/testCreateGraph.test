@@ -1,0 +1,9 @@
+# test multiple graphs can be created
+
+# Create multiple graphs
+CreateGraph graph1
+CreateGraph graph2
+CreateGraph graph3
+CreateGraph graph4
+CreateGraph graph5
+CreateGraph graph6

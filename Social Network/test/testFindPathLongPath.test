@@ -1,0 +1,11 @@
+#Test the output of findPath in a complicated graph
+
+# Load the graph
+LoadGraph marvel marvel.tsv
+
+# Find the path
+FindPath marvel WARLORD WU,_LEIKO
+
+FindPath marvel LUPO ROM_CLONE
+
+FindPath marvel OSAMA ROM_CLONE

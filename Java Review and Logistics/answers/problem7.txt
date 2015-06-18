@@ -1,0 +1,19 @@
+a.
+First, from the warning given by eclipse, I corrected the constructor by changing 
+the statement inside to "this.volume = volume"
+
+getVolume is incorrect because it would always return 0. I changed it to "return volume"
+
+b.
+The second approach is better. Using a for loop to add up all the volumes in the set is less efficient,
+and always takes O(N) runtime. The second approach, however, only takes O(1) runtime.
+
+c.
+The way I used is implementing sort method from class Collections. This method requires a list and a comparator, 
+so I create a comparator and an ArrayList, and add Balls in, which are obtained from an iterator.
+
+The second way is implementing a TreeSet, which would sort Balls using the comparator I create
+
+The first way is better, because BallContainer, used in Box, is basically a set which makes sure there is 
+no duplicate ball in the box; there is no need to create a TreeSet to filter every ball again.
+Instead, creating a list would be much more efficient, since it would not check duplicates when adding.

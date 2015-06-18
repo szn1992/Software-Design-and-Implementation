@@ -1,0 +1,14 @@
+I changed a few things in class both Graph and Edges
+To fix couple of mistakes I made in HW5:
+1. I fixed where I put checkRep in every method, now they are at the end of creator 
+and mutators.
+2. I added modifies to javadoc for suitable methods
+3. I delete reps "no duplicate node in graph," and "no duplicate node in edges," because
+I implemented maps in both classes, it's guaranteed that elements in keySet are unique.
+
+I also added a field called debug to both classes, representing the debug mode
+which controls whether to check all rep or partial rep. 
+To turn on or off the debug mode, I added two public methods to both classes: debugOn(),
+and debugOff()
+In HW6, there are too much data from marvel.tsv, checkRep is quite expensive, this is when 
+I turn the debug mode off, to improve performance.

@@ -1,0 +1,35 @@
+# Test adding different edges
+
+# Create a graph
+created graph graph1
+
+# Add 4 nodes
+added node n1 to graph1
+added node n2 to graph1
+added node n3 to graph1
+added node n4 to graph1
+
+# Add 6 edges
+added edge e3 from n1 to n3 in graph1
+added edge e4 from n2 to n3 in graph1
+added edge e5 from n2 to n4 in graph1
+added edge e7 from n2 to n1 in graph1
+added edge a from n2 to n3 in graph1
+added edge d from n3 to n4 in graph1
+added edge e1 from n1 to n1 in graph1
+added edge e2 from n1 to n2 in graph1
+
+# Print the nodes
+graph1 contains: n1 n2 n3 n4
+
+# Print the outgoing edges from n1
+the children of n1 in graph1 are: n1(e1) n2(e2) n3(e3)
+
+# Print the outgoing edges from n2
+the children of n2 in graph1 are: n1(e7) n3(a) n3(e4) n4(e5)
+
+# Print the outgoing edges from n3
+the children of n3 in graph1 are: n4(d)
+
+# Print the outgoing edges from n4
+the children of n4 in graph1 are:

@@ -1,0 +1,10 @@
+# Test if a graph can be loaded with multiple file
+
+# Load multiple files to the same graph
+loaded graph graph
+loaded graph graph
+loaded graph graph
+loaded graph graph
+
+# list children of one node
+the children of Ernst-the-Bicycling-Wizard in graph are: Notkin-of-the-Superhuman-Beard(0.500) Perkins-the-Magical-Singing-Instructor(1.000)

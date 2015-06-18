@@ -1,0 +1,28 @@
+Problem 1
+a.
+RatNum(int n, int d) and CheckRep() would have to delete the code that reduces ratio 
+to the lowest, since reduced form is no longer needed. 
+This would make most of the program less complex, but equals() and toString() which require reduced form,
+because less ratio reducing and weaker representation invariant check make the execution more efficient.
+
+equals() and toString() would have to add code using gcd to reduce ratio to the lowest, 
+so that two RatNum can be compared and a reduced form of RatNum could be returned.
+This would makes these two methods more complex since they involve extra operations to 
+reduce ratio, which makes execution less efficient.
+
+b.
+"return this" does not meet the specification of @return. For example, for the method of add,
+@return says to return "a RatNum equal to (this + arg)," which is obviously not "this." Same problems
+for methods sub, mul, and div.
+
+"return this" also fails to meet the specification of RatNum class. Representation invariant requires every
+RatNum to be in reduced form and its denominator to be non negative, which can be violated if simply 
+returning "this." For example, "this" is 52 / 48, or 27 / -4
+
+c.
+Because all the methods, which need to return the reduce form of RatNum, would return new RatNum(...),
+and in RatNum checkRep() would be called to check if rep invariant is violated.
+rep invariant should be called at the end of constructor because it requires RatNum in its lowest form, 
+but at the beginning of RatNum, it is probably not; calling checkRep() at the beginning would then cause violation.
+
+Problem 2

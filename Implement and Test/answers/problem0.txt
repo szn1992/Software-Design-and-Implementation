@@ -1,0 +1,48 @@
+Problem 0
+a.
+r = p * q:
+	set r = 0
+	for each term t_p in p
+		for each term t_q in q
+			r += t_q*t_p
+			
+			
+b.
+a = u / v, remaining r:
+	if v == 0, throw an exception
+	set a = 0 
+	set r = u by making a term-by-term copy of all terms in u to r
+	while(r != 0 && degree(r) >= degree(v)) {
+		set new_remain = leading term of r / leading term of v
+		r -= new_remain * v
+		a += new_remain
+	}
+
+c.
+Calculate (x^3 + x - 1) / (x + 1)
+u = x^3 + x - 1
+v = x + 1
+[if v == 0] NO v = x + 1
+a = 0
+r = copy of u = x^3 + x - 1
+while(r != 0 && degree(r) >= degree(v) {
+	Iteration 1: r = x^3 + x - 1 != 0; degree(r) = 3, degree(v) = 1, degree(r) > degree(v);
+				a = 0, v = x + 1, leading term of r = x^3, leading term of v = x
+		new_remain = leading term of r / leading term of v = x^3 / x = x^2
+		r = r - new_remain * v = x^3 + x - 1 -  x^2 * (x + 1) = -x^2 + x - 1
+		a = a + new_remain = 0 + x^2 = x^2
+	
+	Iteration 2: r = -x^2 + x - 1 != 0; degree(r) = 2, degree(v) = 1, degree(r) > degree(v);
+				a = x^2, v = x + 1, leading term of r = -x^2, leading term of v = x
+		new_remain = leading term of r / leading term of v = -x^2 / x = -x
+		r = r - new_remain * v = -x^2 + x - 1 - (-x) * (x + 1) = -x^2 + x - 1 + x^2 + x = 2x - 1
+		a = a + new_remain = x^2 - x
+	
+	Iteration 3: r = 2x - 1 != 0; degree(r) = 1, degree(v) = 1, degree(r) = degree(v);
+				a = x^2 - x, v = x + 1, leading term of r = 2x, leading term of v = x
+		new_remain = leading term of r / leading term of v = 2x / x = 2
+		r = r - new_remain * v = 2x - 1 - 2 * (x + 1) = -3
+		a = a + new_remain = x^2 - x + 2
+}	degree(r) = 0 < degree(v), so we are out of loop
+
+WE ARE DONE a = x^2 - x + 2, r = -3

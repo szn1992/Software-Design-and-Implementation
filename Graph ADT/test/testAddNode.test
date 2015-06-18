@@ -1,0 +1,19 @@
+# Tests that multiple nodes can be added
+
+# Create a graph
+CreateGraph graph1
+
+# Add multiple nodes
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+AddNode graph1 n4
+AddNode graph1 n5
+AddNode graph1 n6
+AddNode graph1 n7
+AddNode graph1 n8
+AddNode graph1 n9
+AddNode graph1 n10
+
+# Print nodes in graph1
+ListNodes graph1

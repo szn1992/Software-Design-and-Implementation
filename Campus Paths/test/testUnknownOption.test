@@ -1,0 +1,8 @@
+# Test the outputs when unknown commands are typed
+rr
+r r
+  b
+ m
+sadasdas
+quit
+q

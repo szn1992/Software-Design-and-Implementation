@@ -1,0 +1,11 @@
+# Test the output of findPath if there is no path found
+
+# Load the graph
+LoadGraph staff staff.tsv
+
+# Find the path of two nodes that have connections
+FindPath staff Perkins Reges
+
+FindPath staff Perkins Beame
+
+FindPath staff Beame Helene
